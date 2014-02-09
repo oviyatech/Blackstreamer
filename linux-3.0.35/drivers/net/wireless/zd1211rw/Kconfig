@@ -1,5 +1,6 @@
 config ZD1211RW
 	tristate "ZyDAS ZD1211/ZD1211B USB-wireless support"
+	default y
 	depends on USB && MAC80211 && EXPERIMENTAL
 	select FW_LOADER
 	---help---
