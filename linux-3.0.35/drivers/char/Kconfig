@@ -644,5 +644,12 @@ config MXS_VIIM
 	help
 	  Support for access to MXS Virtual IIM device, most people should say N here.
 
+config LCD_DRIVER
+	tristate "Lcd driver module"
+	default y	
+#	depends on (ARCH_MX50 || ARCH_MX6)
+#	help
+#	  Support for access to MXS Virtual IIM device, most people should say N here.
+
 endmenu
 

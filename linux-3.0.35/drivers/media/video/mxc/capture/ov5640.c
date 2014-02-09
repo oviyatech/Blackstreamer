@@ -1740,6 +1740,8 @@ static struct v4l2_int_device ov5640_int_device = {
 static int ov5640_probe(struct i2c_client *client,
 			const struct i2c_device_id *id)
 {
+
+	printk("\n\nOVIYA : ENTERED OV5640 PROBE\n\n");
 	int retval;
 	struct fsl_mxc_camera_platform_data *plat_data = client->dev.platform_data;
 	u8 chip_id_high, chip_id_low;

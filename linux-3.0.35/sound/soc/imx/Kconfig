@@ -83,7 +83,13 @@ config SND_SOC_IMX_CS42888
 	select SND_SOC_CS42888
 	select SND_MXC_SOC_MX2
 	help
-	  Say Y if you want to add support for SoC audio on an i.MX board with
+ND_SOC_IMX_WM8960
+        tristate "SoC Audio support for IMX boards with WM8960"
+        select SND_MXC_SOC_MX2
+        select SND_SOC_WM8960
+        help
+          Say Y if you want to add support for SoC audio on an i.MX board with
+          a WM8960 codec.
 	  a cs42888 codec
 
 config SND_SOC_IMX_SI4763
